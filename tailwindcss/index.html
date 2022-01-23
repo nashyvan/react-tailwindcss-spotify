@@ -8,7 +8,7 @@
     <title>Spotify</title>
     <link rel="stylesheet" href="tailwind.css">
 </head>
-<body class="flex items-start">
+<body class="flex items-start bg-[#121212]">
     <aside class="bg-black w-[256px] h-screen text-[#b2b2b2] flex flex-col sticky top-0" >
         <a class="text-white inline-block my-6 px-6 w-full" href="#">
             <svg viewBox="0 0 1134 340" class="w-[130px]"><title>Spotify</title><path fill="currentColor" d="M8 171c0 92 76 168 168 168s168-76 168-168S268 4 176 4 8 79 8 171zm230 78c-39-24-89-30-147-17-14 2-16-18-4-20 64-15 118-8 162 19 11 7 0 24-11 18zm17-45c-45-28-114-36-167-20-17 5-23-21-7-25 61-18 136-9 188 23 14 9 0 31-14 22zM80 133c-17 6-28-23-9-30 59-18 159-15 221 22 17 9 1 37-17 27-54-32-144-35-195-19zm379 91c-17 0-33-6-47-20-1 0-1 1-1 1l-16 19c-1 1-1 2 0 3 18 16 40 24 64 24 34 0 55-19 55-47 0-24-15-37-50-46-29-7-34-12-34-22s10-16 23-16 25 5 39 15c0 0 1 1 2 1s1-1 1-1l14-20c1-1 1-1 0-2-16-13-35-20-56-20-31 0-53 19-53 46 0 29 20 38 52 46 28 6 32 12 32 22 0 11-10 17-25 17zm95-77v-13c0-1-1-2-2-2h-26c-1 0-2 1-2 2v147c0 1 1 2 2 2h26c1 0 2-1 2-2v-46c10 11 21 16 36 16 27 0 54-21 54-61s-27-60-54-60c-15 0-26 5-36 17zm30 78c-18 0-31-15-31-35s13-34 31-34 30 14 30 34-12 35-30 35zm68-34c0 34 27 60 62 60s62-27 62-61-26-60-61-60-63 27-63 61zm30-1c0-20 13-34 32-34s33 15 33 35-13 34-32 34-33-15-33-35zm140-58v-29c0-1 0-2-1-2h-26c-1 0-2 1-2 2v29h-13c-1 0-2 1-2 2v22c0 1 1 2 2 2h13v58c0 23 11 35 34 35 9 0 18-2 25-6 1 0 1-1 1-2v-21c0-1 0-2-1-2h-2c-5 3-11 4-16 4-8 0-12-4-12-12v-54h30c1 0 2-1 2-2v-22c0-1-1-2-2-2h-30zm129-3c0-11 4-15 13-15 5 0 10 0 15 2h1s1-1 1-2V93c0-1 0-2-1-2-5-2-12-3-22-3-24 0-36 14-36 39v5h-13c-1 0-2 1-2 2v22c0 1 1 2 2 2h13v89c0 1 1 2 2 2h26c1 0 1-1 1-2v-89h25l37 89c-4 9-8 11-14 11-5 0-10-1-15-4h-1l-1 1-9 19c0 1 0 3 1 3 9 5 17 7 27 7 19 0 30-9 39-33l45-116v-2c0-1-1-1-2-1h-27c-1 0-1 1-1 2l-28 78-30-78c0-1-1-2-2-2h-44v-3zm-83 3c-1 0-2 1-2 2v113c0 1 1 2 2 2h26c1 0 1-1 1-2V134c0-1 0-2-1-2h-26zm-6-33c0 10 9 19 19 19s18-9 18-19-8-18-18-18-19 8-19 18zm245 69c10 0 19-8 19-18s-9-18-19-18-18 8-18 18 8 18 18 18zm0-34c9 0 17 7 17 16s-8 16-17 16-16-7-16-16 7-16 16-16zm4 18c3-1 5-3 5-6 0-4-4-6-8-6h-8v19h4v-6h4l4 6h5zm-3-9c2 0 4 1 4 3s-2 3-4 3h-4v-6h4z"></path></svg>
@@ -57,14 +57,14 @@
         </footer>
     </aside>
     <div class="flex-1">
-        <header class="bg-[#070707] flex flex-1 justify-between items-center py-[10px] px-[32px] sticky top-0">
+        <header class="bg-[#070707] flex flex-1 justify-between items-center py-[10px] px-[32px] sticky top-0 z-10">
             <div class="flex">
                 <a class="text-[#969696] mr-[8px] p-1 cursor-not-allowed" href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
                     </svg>
                 </a>
-                <a class="text-[#969696] ml-[8px] p-1 cursor-not-allowed"href="#">
+                <a class="text-[#969696] ml-[8px] p-1 cursor-not-allowed" href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                     </svg>
@@ -75,8 +75,192 @@
                 <button class="bg-white text-[#2e2e2e] text-xs font-semibold leading-5 tracking-widest uppercase py-[9px] px-[38px] rounded-full hover:scale-105">Log In</button>
             </div>
         </header>
-        <main>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi explicabo maiores placeat quidem velit. Aperiam eligendi reiciendis reprehenderit veritatis. A accusantium aliquam aperiam architecto asperiores at autem consectetur cumque cupiditate debitis, delectus dignissimos ducimus eius fugit inventore iusto labore laborum magnam molestiae neque nisi odio officia officiis praesentium quae quasi quos ratione reiciendis repellat similique sit soluta tempora unde voluptas voluptate, voluptatem voluptatum. Ab accusamus alias aperiam aspernatur autem, blanditiis commodi consectetur doloribus error nemo nobis, nostrum optio perferendis porro praesentium quae, quod repudiandae sapiente similique ullam! Accusantium adipisci aliquam amet asperiores commodi consectetur, cum dolores eos eum expedita fugiat fugit hic incidunt ipsam laudantium molestiae natus nesciunt odio officia quia quis rem repudiandae rerum sit tempora ullam voluptates! Culpa ducimus eligendi eos error et fugiat incidunt iusto laudantium maxime, minima mollitia necessitatibus quae repellat sunt vero voluptas voluptate! Blanditiis ea esse facere iure, iusto porro qui recusandae rem unde. Blanditiis consequuntur dolor doloribus iste maxime officia repellat. Adipisci aliquid architecto assumenda at autem beatae dolor ducimus eum facere fuga hic id incidunt ipsa ipsam iste iure laboriosam laborum maxime molestias nemo neque, nulla officia pariatur qui, ratione reiciendis rem repellendus repudiandae sint tenetur ut vitae voluptas voluptatibus. Blanditiis eaque, eius error iure, maxime nesciunt, porro praesentium sit sunt temporibus ullam unde? Accusantium commodi consequatur cumque dolorem eligendi esse, maiores minus odio optio qui quidem, soluta. Blanditiis consequuntur culpa delectus deleniti doloremque illo ipsum iure laudantium minus, nisi omnis provident quae quaerat qui quo reiciendis rerum sequi similique soluta suscipit tenetur veritatis voluptatum. A consequuntur dicta, et quaerat sunt unde velit. Aut autem culpa deserunt magnam quo sapiente sed tenetur voluptatum! Ad dolorum est incidunt iste itaque libero maxime non, numquam officia perferendis sapiente, sequi tempore unde veniam vero! Ab assumenda deserunt dolore dolorum eum fugit impedit maxime officiis quos unde? Atque consequuntur culpa dicta dignissimos doloribus ducimus, facere, hic nihil non numquam perferendis placeat quis repudiandae unde, vel. Animi deserunt expedita, fuga id iure ratione vitae! Accusantium aliquam aspernatur at cupiditate deserunt dolores ducimus eaque eligendi enim excepturi fugit inventore iusto labore magnam modi necessitatibus nemo, non, odit provident quidem quis recusandae sint sit tempora velit vitae voluptatem! Adipisci corporis itaque libero obcaecati optio quibusdam unde ut veniam voluptas voluptatibus. Eligendi eum, explicabo fugiat illum itaque iure nam natus nemo nulla placeat suscipit ullam vero voluptatum. Adipisci at blanditiis consectetur culpa dolores ducimus eius, enim eum expedita facere harum ipsa labore magnam magni maiores minima mollitia nostrum optio perspiciatis possimus quae quaerat quas quibusdam quo ratione rem repellendus repudiandae sequi sint sit totam ut velit veritatis. Aspernatur at atque cum cupiditate debitis dicta dignissimos dolor dolorem ea eaque eveniet ex excepturi itaque labore maxime modi molestiae molestias mollitia nam nemo nesciunt nostrum officia omnis placeat provident, quam quasi quisquam recusandae repellendus sit suscipit temporibus vel voluptas? Adipisci animi at atque consequatur culpa debitis deserunt dicta dolorem ea excepturi facere illum incidunt laboriosam nobis officiis, praesentium provident quaerat, quia quod reprehenderit sint sunt ut velit voluptate voluptatibus! Accusamus error iure maiores maxime molestiae nemo nisi, rem soluta suscipit voluptate? Asperiores, debitis delectus, dicta doloremque doloribus dolorum eaque earum eius ex fugiat in ipsum nam nemo neque nesciunt possimus praesentium provident quasi quod rem repudiandae saepe sapiente temporibus tenetur unde. A animi consequuntur dolore eaque enim facilis fugit ipsam itaque iure iusto labore laborum nam nemo neque nesciunt nobis officiis perferendis perspiciatis quae recusandae similique sint tempore tenetur ut, vero voluptas voluptatibus. Culpa eius labore laboriosam maiores molestiae natus numquam provident repellat. A aliquid consequuntur cum debitis dicta dolorem earum eius expedita nemo vitae. Accusamus aspernatur blanditiis, doloremque eaque earum neque non pariatur placeat sit sunt vel veritatis, voluptatum. Ad asperiores cupiditate exercitationem iure magnam quod soluta sunt suscipit veritatis voluptate! Architecto aspernatur distinctio doloribus earum et, eum expedita fugiat impedit incidunt maxime, obcaecati pariatur perspiciatis provident quae quas reprehenderit rerum temporibus vel vero vitae. A ad adipisci autem deserunt doloremque eaque eos, facilis illum ipsum, iste laborum mollitia nesciunt nihil nisi omnis quaerat quisquam repellendus sapiente sint sunt. Alias amet consequatur dolore est harum, illo, laudantium molestias odio placeat provident repudiandae veniam, vitae voluptatibus? Animi at dignissimos ex id maxime, necessitatibus numquam quasi repellat. Ad commodi, deserunt doloremque in ipsa nesciunt quae quos sunt. Accusantium aperiam consequuntur quibusdam. Ab aliquid aspernatur cupiditate deleniti deserunt ducimus earum enim est illum ipsum labore laborum magnam minima natus non omnis quaerat quas repellat sed sequi tempore voluptate, voluptatibus? Architecto dolor eum inventore nemo nostrum, recusandae? Ab aperiam beatae consequatur, cupiditate dicta, dolorum harum in ipsum iste iure magni minus perferendis perspiciatis placeat qui quibusdam quidem quos recusandae reiciendis repellendus sed ut vero voluptatem. Accusamus adipisci aliquam aliquid assumenda at consequuntur cupiditate dicta distinctio dolore eum hic incidunt ipsam, itaque labore minima minus nisi numquam quasi quod reiciendis repellendus reprehenderit repudiandae sapiente soluta, suscipit tenetur ullam ut vel velit, voluptate. Deleniti eligendi explicabo harum hic ipsa, necessitatibus quasi unde? A deserunt error facilis fugit illo molestias necessitatibus recusandae voluptates. Incidunt libero magni molestias numquam veritatis! Consectetur corporis dolores doloribus error esse expedita facilis laborum mollitia nobis non perferendis, provident quo quod ratione sit temporibus voluptate! Aliquid eligendi et illo in magni quo vel voluptatibus. Alias aliquam assumenda blanditiis deserunt distinctio dolore earum esse est eveniet excepturi expedita facilis fuga fugit id inventore ipsa, laborum nam nisi pariatur quas quibusdam sint soluta tenetur voluptas voluptatum? Animi blanditiis delectus dolore, doloremque et eveniet ex fugiat in laboriosam laudantium modi, molestiae nobis nulla officiis quasi quis quo reiciendis soluta suscipit tempora tempore velit voluptas. Amet blanditiis commodi facere fuga inventore labore omnis quam, quis sed sint tenetur velit voluptatum. Accusamus accusantium assumenda dicta doloribus et exercitationem expedita facilis illum in ipsa, ipsam libero, magnam maxime, minima nobis rerum sunt unde voluptatem. Dignissimos praesentium sit vel! Aperiam asperiores corporis doloribus eveniet id impedit in nostrum odio quaerat quisquam quo quos, repellendus veritatis? Accusantium aliquam aliquid aperiam at esse est eveniet facilis impedit minus natus nemo numquam perferendis perspiciatis quae quidem quisquam rem, sint, tempore totam ullam voluptates voluptatum.
+        <main class="text-white relative">
+            <div class="h-[275px] bg-gradient-to-b from-[#1f1f1f] to-[#121212] absolute w-full"></div>
+            <div class="relative pt-[24px] pb-[48px] px-[32px] space-y-9">
+                <div>
+                    <div class="flex justify-between items-end mb-[18px]">
+                        <div>
+                            <h2 class="text-2xl font-semibold hover:underline capitalize">
+                                <a href="#">Lorem ipsum dolor sit amet.</a>
+                            </h2>
+                        </div>
+                        <a class="uppercase text-xs font-semibold tracking-widest hover:underline text-[#b3b3b3] leading-6" href="#">See all</a>
+                    </div>
+                    <div class="grid grid-cols-4 gap-5">
+                        <a class="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group" href="#">
+                            <div class="relative">
+                                <img class="rounded shadow-lg" src="https://fakeimg.pl/600/7f1d1d/fff?text=Cover&font=lobster" alt="">
+                                <button class="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <h3 class="mt-4 mb-4 font-semibold tracking-widest capitalize">Playlist title</h3>
+                            <p class="text-sm text-[#b3b3b3] line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, illo?</p>
+                        </a>
+                        <a class="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group" href="#">
+                            <div class="relative">
+                                <img class="rounded shadow-lg" src="https://fakeimg.pl/600/112f23/fff?text=Cover&font=lobster" alt="">
+                                <button class="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <h3 class="mt-4 mb-4 font-semibold tracking-widest capitalize">Playlist title</h3>
+                            <p class="text-sm text-[#b3b3b3] line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, illo?</p>
+                        </a>
+                        <a class="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group" href="#">
+                            <div class="relative">
+                                <img class="rounded shadow-lg" src="https://fakeimg.pl/600/6123ef/fff?text=Cover&font=lobster" alt="">
+                                <button class="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <h3 class="mt-4 mb-4 font-semibold tracking-widest capitalize">Playlist title</h3>
+                            <p class="text-sm text-[#b3b3b3] line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, illo?</p>
+                        </a>
+                        <a class="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group" href="#">
+                            <div class="relative">
+                                <img class="rounded shadow-lg" src="https://fakeimg.pl/600/753421/fff?text=Cover&font=lobster" alt="">
+                                <button class="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <h3 class="mt-4 mb-4 font-semibold tracking-widest capitalize">Playlist title</h3>
+                            <p class="text-sm text-[#b3b3b3] line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, illo?</p>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-between items-end mb-[18px]">
+                        <div>
+                            <h2 class="text-2xl font-semibold hover:underline capitalize">
+                                <a href="#">Lorem ipsum dolor.</a>
+                            </h2>
+                            <p class="text-sm text-[#b3b3b3]">Lorem ipsum dolor sit amet, consectetur.</p>
+                        </div>
+                        <a class="uppercase text-xs font-semibold tracking-widest hover:underline text-[#b3b3b3] leading-6" href="#">See all</a>
+                    </div>
+                    <div class="grid grid-cols-4 gap-5">
+                        <a class="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group" href="#">
+                            <div class="relative">
+                                <img class="rounded shadow-lg" src="https://fakeimg.pl/600/56af21/fff?text=Cover&font=lobster" alt="">
+                                <button class="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <h3 class="mt-4 mb-4 font-semibold tracking-widest capitalize">Playlist title</h3>
+                            <p class="text-sm text-[#b3b3b3] line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, illo?</p>
+                        </a>
+                        <a class="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group" href="#">
+                            <div class="relative">
+                                <img class="rounded shadow-lg" src="https://fakeimg.pl/600/af23aa/fff?text=Cover&font=lobster" alt="">
+                                <button class="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <h3 class="mt-4 mb-4 font-semibold tracking-widest capitalize">Playlist title</h3>
+                            <p class="text-sm text-[#b3b3b3] line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, illo?</p>
+                        </a>
+                        <a class="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group" href="#">
+                            <div class="relative">
+                                <img class="rounded shadow-lg" src="https://fakeimg.pl/600/ff2d1f/fff?text=Cover&font=lobster" alt="">
+                                <button class="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <h3 class="mt-4 mb-4 font-semibold tracking-widest capitalize">Playlist title</h3>
+                            <p class="text-sm text-[#b3b3b3] line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, illo?</p>
+                        </a>
+                        <a class="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group" href="#">
+                            <div class="relative">
+                                <img class="rounded shadow-lg" src="https://fakeimg.pl/600/f4a3a2/fff?text=Cover&font=lobster" alt="">
+                                <button class="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <h3 class="mt-4 mb-4 font-semibold tracking-widest capitalize">Playlist title</h3>
+                            <p class="text-sm text-[#b3b3b3] line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, illo?</p>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-between items-end mb-[18px]">
+                        <div>
+                            <h2 class="text-2xl font-semibold hover:underline capitalize">
+                                <a href="#">Lorem ipsum.</a>
+                            </h2>
+                            <p class="text-sm text-[#b3b3b3]">Lorem ipsum dolor sit amet, consectetur.</p>
+                        </div>
+                        <a class="uppercase text-xs font-semibold tracking-widest hover:underline text-[#b3b3b3] leading-6" href="#">See all</a>
+                    </div>
+                    <div class="grid grid-cols-4 gap-5">
+                        <a class="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group" href="#">
+                            <div class="relative">
+                                <img class="rounded shadow-lg" src="https://fakeimg.pl/600/b42a32/fff?text=Cover&font=lobster" alt="">
+                                <button class="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <h3 class="mt-4 mb-4 font-semibold tracking-widest capitalize">Playlist title</h3>
+                            <p class="text-sm text-[#b3b3b3] line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, illo?</p>
+                        </a>
+                        <a class="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group" href="#">
+                            <div class="relative">
+                                <img class="rounded shadow-lg" src="https://fakeimg.pl/600/4f2a2a/fff?text=Cover&font=lobster" alt="">
+                                <button class="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <h3 class="mt-4 mb-4 font-semibold tracking-widest capitalize">Playlist title</h3>
+                            <p class="text-sm text-[#b3b3b3] line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, illo?</p>
+                        </a>
+                        <a class="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group" href="#">
+                            <div class="relative">
+                                <img class="rounded shadow-lg" src="https://fakeimg.pl/600/a6b6c6/fff?text=Cover&font=lobster" alt="">
+                                <button class="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <h3 class="mt-4 mb-4 font-semibold tracking-widest capitalize">Playlist title</h3>
+                            <p class="text-sm text-[#b3b3b3] line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, illo?</p>
+                        </a>
+                        <a class="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group" href="#">
+                            <div class="relative">
+                                <img class="rounded shadow-lg" src="https://fakeimg.pl/600/6e2b4c/fff?text=Cover&font=lobster" alt="">
+                                <button class="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <h3 class="mt-4 mb-4 font-semibold tracking-widest capitalize">Playlist title</h3>
+                            <p class="text-sm text-[#b3b3b3] line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, illo?</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </main>
     </div>
 </body>
