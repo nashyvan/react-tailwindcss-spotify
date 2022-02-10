@@ -27,16 +27,15 @@ const menuItems = [
     },
 ]
 
-function Playlist() {
+function Playlist({ classes, coverUrl, title, description }) {
     return (
-        <a className="relative p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group"
-           href="/">
+        <a className={ classes } href="/">
             <div className="relative">
-                <PlaylistCover />
+                <PlaylistCover url={ coverUrl } />
                 <PlaylistButtonPlay />
             </div>
-            <PlaylistTitle />
-            <PlaylistDescription />
+            <PlaylistTitle title={ title } />
+            <PlaylistDescription description={ description } />
             <PlaylistContextMenu menuItems={ menuItems } classes="absolute top-9 left-9 bg-[#282828] text-[#eaeaea] text-sm p-1 rounded shadow-xl cursor-default divide-y divide-[#3e3e3e] whitespace-nowrap z-10 hidden group-hover:block" />
         </a>
     )

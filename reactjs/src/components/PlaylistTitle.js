@@ -1,7 +1,6 @@
-function PlaylistTitle() {
+function PlaylistTitle({ title }) {
     return (
-        <h3 className="mt-4 mb-4 font-semibold tracking-widest capitalize">Playlist
-            title</h3>
+        <h3 className="mt-4 mb-4 font-semibold tracking-widest capitalize">{ title }</h3>
     )
 }
 
