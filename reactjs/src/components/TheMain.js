@@ -1,10 +1,61 @@
 import Playlist from './Playlist'
 
-const playlist = {
-    coverUrl: 'https://fakeimg.pl/600/7f1d1d/fff?text=Cover&font=lobster',
-    title: 'Playlist title',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, illo?',
-}
+const playlists = [
+    {
+        classes: '',
+        coverUrl: 'https://fakeimg.pl/600/7f1d1d/fff?text=Cover&font=lobster',
+        title: 'Playlist title 1',
+        description: 'Lorem ipsum dolor sit amet.',
+    },
+    {
+        classes: 'hidden sm:block',
+        coverUrl: 'https://fakeimg.pl/600/7f1a3d/fff?text=Cover&font=lobster',
+        title: 'Playlist title 2',
+        description: 'Lorem ipsum dolor sit amet.',
+    },
+    {
+        classes: 'hidden lg:block',
+        coverUrl: 'https://fakeimg.pl/600/1a1d1d/fff?text=Cover&font=lobster',
+        title: 'Playlist title 3',
+        description: 'Lorem ipsum dolor sit amet.',
+    },
+    {
+        classes: 'hidden xl:block',
+        coverUrl: 'https://fakeimg.pl/600/6d1d1d/fff?text=Cover&font=lobster',
+        title: 'Playlist title 4',
+        description: 'Lorem ipsum dolor sit amet.',
+    },
+    {
+        classes: 'hidden 2xl:block',
+        coverUrl: 'https://fakeimg.pl/600/a81d1d/fff?text=Cover&font=lobster',
+        title: 'Playlist title 5',
+        description: 'Lorem ipsum dolor sit amet.',
+    },
+    {
+        classes: 'hidden 3xl:block',
+        coverUrl: 'https://fakeimg.pl/600/7f100d/fff?text=Cover&font=lobster',
+        title: 'Playlist title 6',
+        description: 'Lorem ipsum dolor sit amet.',
+    },
+    {
+        classes: 'hidden 4xl:block',
+        coverUrl: 'https://fakeimg.pl/600/7f1d9f/fff?text=Cover&font=lobster',
+        title: 'Playlist title 7',
+        description: 'Lorem ipsum dolor sit amet.',
+    },
+    {
+        classes: 'hidden 5xl:block',
+        coverUrl: 'https://fakeimg.pl/600/0a1d7d/fff?text=Cover&font=lobster',
+        title: 'Playlist title 8',
+        description: 'Lorem ipsum dolor sit amet.',
+    },
+    {
+        classes: 'hidden 6xl:block',
+        coverUrl: 'https://fakeimg.pl/600/0f1d0d/fff?text=Cover&font=lobster',
+        title: 'Playlist title 9',
+        description: 'Lorem ipsum dolor sit amet.',
+    },
+]
 
 function TheMain() {
     return (
@@ -22,175 +73,11 @@ function TheMain() {
                            href="/">See all</a>
                     </div>
                     <div className="grid sm:grid-cols-playlists-mobile md:grid-cols-playlists-tablet lg:grid-cols-playlists-desktop gap-5">
-                        <Playlist { ...playlist } classes="relative p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group" />
-                        <a className="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group hidden sm:block"
-                           href="/">
-                            <div className="relative">
-                                <img className="rounded shadow-lg"
-                                     src="https://fakeimg.pl/600/112f23/fff?text=Cover&font=lobster"
-                                     alt=""/>
-                                <button
-                                    className="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none"
-                                         viewBox="0 0 24 24" stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-                                              d="M9 5l7 7-7 7"/>
-                                    </svg>
-                                </button>
-                            </div>
-                            <h3 className="mt-4 mb-4 font-semibold tracking-widest capitalize">Playlist
-                                title</h3>
-                            <p className="text-sm text-[#b3b3b3] line-clamp-2">Lorem ipsum dolor sit amet,
-                                consectetur
-                                adipisicing elit. Dolor, illo?</p>
-                        </a>
-                        <a className="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group hidden lg:block"
-                           href="/">
-                            <div className="relative">
-                                <img className="rounded shadow-lg"
-                                     src="https://fakeimg.pl/600/6123ef/fff?text=Cover&font=lobster"
-                                     alt=""/>
-                                <button
-                                    className="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none"
-                                         viewBox="0 0 24 24" stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-                                              d="M9 5l7 7-7 7"/>
-                                    </svg>
-                                </button>
-                            </div>
-                            <h3 className="mt-4 mb-4 font-semibold tracking-widest capitalize">Playlist
-                                title</h3>
-                            <p className="text-sm text-[#b3b3b3] line-clamp-2">Lorem ipsum dolor sit amet,
-                                consectetur
-                                adipisicing elit. Dolor, illo?</p>
-                        </a>
-                        <a className="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group hidden xl:block"
-                           href="/">
-                            <div className="relative">
-                                <img className="rounded shadow-lg"
-                                     src="https://fakeimg.pl/600/753421/fff?text=Cover&font=lobster"
-                                     alt=""/>
-                                <button
-                                    className="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none"
-                                         viewBox="0 0 24 24" stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-                                              d="M9 5l7 7-7 7"/>
-                                    </svg>
-                                </button>
-                            </div>
-                            <h3 className="mt-4 mb-4 font-semibold tracking-widest capitalize">Playlist
-                                title</h3>
-                            <p className="text-sm text-[#b3b3b3] line-clamp-2">Lorem ipsum dolor sit amet,
-                                consectetur
-                                adipisicing elit. Dolor, illo?</p>
-                        </a>
-                        <a className="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group hidden 2xl:block"
-                           href="/">
-                            <div className="relative">
-                                <img className="rounded shadow-lg"
-                                     src="https://fakeimg.pl/600/753421/fff?text=Cover&font=lobster"
-                                     alt=""/>
-                                <button
-                                    className="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none"
-                                         viewBox="0 0 24 24" stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-                                              d="M9 5l7 7-7 7"/>
-                                    </svg>
-                                </button>
-                            </div>
-                            <h3 className="mt-4 mb-4 font-semibold tracking-widest capitalize">Playlist
-                                title</h3>
-                            <p className="text-sm text-[#b3b3b3] line-clamp-2">Lorem ipsum dolor sit amet,
-                                consectetur
-                                adipisicing elit. Dolor, illo?</p>
-                        </a>
-                        <a className="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group hidden 3xl:block"
-                           href="/">
-                            <div className="relative">
-                                <img className="rounded shadow-lg"
-                                     src="https://fakeimg.pl/600/753421/fff?text=Cover&font=lobster"
-                                     alt=""/>
-                                <button
-                                    className="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none"
-                                         viewBox="0 0 24 24" stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-                                              d="M9 5l7 7-7 7"/>
-                                    </svg>
-                                </button>
-                            </div>
-                            <h3 className="mt-4 mb-4 font-semibold tracking-widest capitalize">Playlist
-                                title</h3>
-                            <p className="text-sm text-[#b3b3b3] line-clamp-2">Lorem ipsum dolor sit amet,
-                                consectetur
-                                adipisicing elit. Dolor, illo?</p>
-                        </a>
-                        <a className="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group hidden 4xl:block"
-                           href="/">
-                            <div className="relative">
-                                <img className="rounded shadow-lg"
-                                     src="https://fakeimg.pl/600/753421/fff?text=Cover&font=lobster"
-                                     alt=""/>
-                                <button
-                                    className="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none"
-                                         viewBox="0 0 24 24" stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-                                              d="M9 5l7 7-7 7"/>
-                                    </svg>
-                                </button>
-                            </div>
-                            <h3 className="mt-4 mb-4 font-semibold tracking-widest capitalize">Playlist
-                                title</h3>
-                            <p className="text-sm text-[#b3b3b3] line-clamp-2">Lorem ipsum dolor sit amet,
-                                consectetur
-                                adipisicing elit. Dolor, illo?</p>
-                        </a>
-                        <a className="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group hidden 5xl:block"
-                           href="/">
-                            <div className="relative">
-                                <img className="rounded shadow-lg"
-                                     src="https://fakeimg.pl/600/753421/fff?text=Cover&font=lobster"
-                                     alt=""/>
-                                <button
-                                    className="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none"
-                                         viewBox="0 0 24 24" stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-                                              d="M9 5l7 7-7 7"/>
-                                    </svg>
-                                </button>
-                            </div>
-                            <h3 className="mt-4 mb-4 font-semibold tracking-widest capitalize">Playlist
-                                title</h3>
-                            <p className="text-sm text-[#b3b3b3] line-clamp-2">Lorem ipsum dolor sit amet,
-                                consectetur
-                                adipisicing elit. Dolor, illo?</p>
-                        </a>
-                        <a className="p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group hidden 6xl:block"
-                           href="/">
-                            <div className="relative">
-                                <img className="rounded shadow-lg"
-                                     src="https://fakeimg.pl/600/753421/fff?text=Cover&font=lobster"
-                                     alt=""/>
-                                <button
-                                    className="h-10 w-10 bg-[#1cb955] rounded-full shadow-xl absolute right-2 bottom-2 flex justify-center items-center cursor-auto duration-200 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 hover:scale-105">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none"
-                                         viewBox="0 0 24 24" stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-                                              d="M9 5l7 7-7 7"/>
-                                    </svg>
-                                </button>
-                            </div>
-                            <h3 className="mt-4 mb-4 font-semibold tracking-widest capitalize">Playlist
-                                title</h3>
-                            <p className="text-sm text-[#b3b3b3] line-clamp-2">Lorem ipsum dolor sit amet,
-                                consectetur
-                                adipisicing elit. Dolor, illo?</p>
-                        </a>
+                        {
+                            playlists.map((playlist) => (
+                                <Playlist key={playlist.title} { ...playlist } />
+                            ))
+                        }
                     </div>
                 </div>
                 <div>

@@ -29,7 +29,7 @@ const menuItems = [
 
 function Playlist({ classes, coverUrl, title, description }) {
     return (
-        <a className={ classes } href="/">
+        <a className={ `relative p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group ${classes}` } href="/">
             <div className="relative">
                 <PlaylistCover url={ coverUrl } />
                 <PlaylistButtonPlay />
