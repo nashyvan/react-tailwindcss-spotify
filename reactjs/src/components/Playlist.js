@@ -37,18 +37,22 @@ function Playlist({classes, coverUrl, title, description}) {
         setIsContextMenuOpen(true)
     }
 
+    function closeContextMenu() {
+        setIsContextMenuOpen(false)
+    }
 
     return (
         <a className={`relative p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group ${classes}`} href="/"
            onContextMenu={ openContextMenu }>
             <div className="relative">
-                <PlaylistCover url={coverUrl}/>
+                <PlaylistCover url={ coverUrl }/>
                 <PlaylistButtonPlay/>
             </div>
-            <PlaylistTitle title={title}/>
-            <PlaylistDescription description={description}/>
+            <PlaylistTitle title={ title }/>
+            <PlaylistDescription description={ description }/>
             {isContextMenuOpen && (
-                <PlaylistContextMenu menuItems={menuItems}
+                <PlaylistContextMenu menuItems={ menuItems }
+                                     onClose={ closeContextMenu }
                                      classes="absolute top-9 left-9 bg-[#282828] text-[#eaeaea] text-sm p-1 rounded shadow-xl cursor-default divide-y divide-[#3e3e3e] whitespace-nowrap z-10"
                 />
             )}
