@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import {useLayoutEffect, useRef, useState} from 'react'
 
 import PlaylistCover from './PlaylistCover'
 import PlaylistButtonPlay from './PlaylistButtonPlay'
@@ -29,11 +29,36 @@ const menuItems = [
     },
 ]
 
+const clickPosition = {
+    x: null,
+    y: null
+}
+
 function Playlist({classes, coverUrl, title, description}) {
     const [isContextMenuOpen, setIsContextMenuOpen] = useState(false)
+    const contextMenuRef = useRef(null)
+
+    const bgClasses = isContextMenuOpen
+        ? 'bg-[#272727]'
+        : 'bg-[#181818] hover:bg-[#272727]'
+
+    function updateContextMenuPosition() {
+        contextMenuRef.current.style.top = `${clickPosition.y}px`
+        contextMenuRef.current.style.left = `${clickPosition.x}px `
+    }
+
+    useLayoutEffect(() => {
+        if (isContextMenuOpen) {
+            updateContextMenuPosition()
+        }
+    })
 
     function openContextMenu(event) {
         event.preventDefault()
+
+        clickPosition.x = event.clientX
+        clickPosition.y = event.clientY
+
         setIsContextMenuOpen(true)
     }
 
@@ -42,7 +67,7 @@ function Playlist({classes, coverUrl, title, description}) {
     }
 
     return (
-        <a className={`relative p-4 rounded-md bg-[#181818] hover:bg-[#272727] duration-200 group ${classes}`} href="/"
+        <a className={`relative p-4 rounded-md  duration-200 group ${classes} ${bgClasses}`} href="/"
            onContextMenu={ openContextMenu } onClick={ (event) => event.preventDefault() }>
             <div className="relative">
                 <PlaylistCover url={ coverUrl }/>
@@ -51,9 +76,9 @@ function Playlist({classes, coverUrl, title, description}) {
             <PlaylistTitle title={ title }/>
             <PlaylistDescription description={ description }/>
             {isContextMenuOpen && (
-                <PlaylistContextMenu menuItems={ menuItems }
+                <PlaylistContextMenu ref={ contextMenuRef } menuItems={ menuItems }
                                      onClose={ closeContextMenu }
-                                     classes="absolute top-9 left-9 bg-[#282828] text-[#eaeaea] text-sm p-1 rounded shadow-xl cursor-default divide-y divide-[#3e3e3e] whitespace-nowrap z-10"
+                                     classes="fixed bg-[#282828] text-[#eaeaea] text-sm p-1 rounded shadow-xl cursor-default dvide-y divide-[#3e3e3e] whitespace-nowrap z-10"
                 />
             )}
         </a>
