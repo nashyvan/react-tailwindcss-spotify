@@ -1,4 +1,4 @@
-import {useLayoutEffect, useRef, useState} from 'react'
+import {useLayoutEffect, useRef, useState, useEffect} from 'react'
 
 import PlaylistCover from './PlaylistCover'
 import PlaylistButtonPlay from './PlaylistButtonPlay'
@@ -55,6 +55,29 @@ function Playlist({classes, coverUrl, title, description, toggleScrolling}) {
         }
     })
 
+    useEffect(() => {
+        if (!isContextMenuOpen) return
+
+        function handleClickAway(event) {
+            if (!contextMenuRef.current.contains(event.target)) {
+                closeContextMenu()
+            }
+        }
+        function handleEsc(event) {
+            if (event.keyCode === 27) {
+                closeContextMenu()
+            }
+        }
+
+        document.addEventListener('mousedown', handleClickAway)
+        document.addEventListener('keydown', handleEsc)
+
+        return () => {
+            document.removeEventListener('mousedown', handleClickAway)
+            document.removeEventListener('keydown', handleEsc)
+        }
+    })
+
     function openContextMenu(event) {
         event.preventDefault()
 
@@ -79,7 +102,6 @@ function Playlist({classes, coverUrl, title, description, toggleScrolling}) {
             <PlaylistDescription description={ description }/>
             {isContextMenuOpen && (
                 <PlaylistContextMenu ref={ contextMenuRef } menuItems={ menuItems }
-                                     onClose={ closeContextMenu }
                                      classes="fixed bg-[#282828] text-[#eaeaea] text-sm p-1 rounded shadow-xl cursor-default dvide-y divide-[#3e3e3e] whitespace-nowrap z-10"
                 />
             )}
